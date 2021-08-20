@@ -1,4 +1,4 @@
-
+const { CommandInteraction } = require('discord.js')
 
 module.exports = {
     name: 'Ping',
@@ -9,10 +9,10 @@ module.exports = {
     /**
      *@document
      * @this
-     * @param {Message} msg 
+     * @param {CommandInteraction} msg 
      * @param {String[]} args 
      */
     async execute(msg) {
-        msg.channel.send("Nope not today")
+        msg.reply("Nope not today")
     }
 };

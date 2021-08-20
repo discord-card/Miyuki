@@ -32,6 +32,7 @@ client.on('interactionCreate', interaction => {
         command.execute(interaction);
 
     } catch (error) {
+        console.log(error)
         interaction.channel.send("Command failed qwq")
     }
 });
