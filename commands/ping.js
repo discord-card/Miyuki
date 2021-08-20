@@ -12,7 +12,7 @@ module.exports = {
      * @param {Message} msg 
      * @param {String[]} args 
      */
-    async execute(msg, args, emb) {
-     console.log('A')
+    async execute(msg) {
+        msg.channel.send("Nope not today")
     }
 };
